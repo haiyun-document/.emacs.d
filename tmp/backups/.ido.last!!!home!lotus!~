@@ -1,0 +1,153 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/lotus/Working/lotus/lotus-testing-report/app/server/" . "views/")
+ ("/home/lotus/Working/lotus/lotus-testing-report/app/" . "server/")
+ ("/home/lotus/Working/lotus/lotus-testing/src/main/clojure/" . "testing/")
+ ("/home/lotus/Working/lotus/lotus-testing/src/main/" . "clojure/")
+ ("/home/lotus/Working/lotus/lotus-testing/src/" . "main/")
+ ("/home/lotus/Working/lotus/lotus-testing/" . "src/")
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/jp/chakra/lotus/cms/" . "response/")
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/jp/chakra/lotus/" . "cms/")
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/jp/chakra/" . "lotus/")
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/jp/" . "chakra/")
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/" . "jp/")
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/" . "clojure/")
+ ("/home/lotus/workspace/lotus/lotus-cms/src/" . "main/")
+ ("/home/lotus/workspace/lotus/lotus-cms/" . "src/")
+ ("/home/lotus/workspace/lotus/" . "lotus-cms/")
+ ("/home/" . "lotus/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/chakra/lotus/search/" . "server/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/chakra/lotus/" . "search/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/chakra/" . "lotus/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/" . "chakra/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/" . "jp/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/" . "clojure/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/" . "main/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/" . "src/")
+ ("/home/lotus/pj/" . "24206067/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-app/app/server/vendor/" . "facetview/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-app/app/server/" . "views/")
+ ("/home/lotus/pj/24206067/lotus/lotus-search-app/app/" . "server/")
+ ("/home/lotus/pj/24206067/lotus/" . "lotus-search-app/")
+ ("/home/lotus/pj/24206067/" . "lotus/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/lotus/Working/lotus/lotus-testing-report/app/server/views/"
+ "/home/lotus/Working/lotus/lotus-testing/src/main/clojure/testing/"
+ "/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/jp/chakra/lotus/cms/response/"
+ "/home/lotus/"
+ "/home/lotus/pj/24206067/lotus/lotus-search-app/"
+ "/home/lotus/pj/24206067/lotus/lotus-search-app/app/server/views/"
+ "/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/chakra/lotus/search/server/scanner/"
+ "/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/chakra/lotus/search/server/"
+ "/home/lotus/pj/24206067/lotus/lotus-search-app/app/server/vendor/facetview/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "layout.jade"
+ "core.clj"
+ "sync_validator.clj"
+ "indexer.sh"
+ "package.json"
+ "account.jade"
+ "dbscanner.clj"
+ "publisher.clj"
+ "jquery.facetview.js"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/lotus/Working/lotus/lotus-testing-report/" (20686 27804 242 578000) "README.md" "config/" "../" "node_modules/" "./" "app/" "package.json" "bin/" "knockout.meteor/" "app.js")
+
+ ("/home/lotus/Working/lotus/" (20686 27961 460246 610000) "lotus-search-server/" "pmip/" "lotus-security-acl/" "../" "download_sh/" "./" "lotus-dav-server/" "lotus-review/" "pom.xml" "lotus-apps-psfb-recipe/" "lotus-apps-shimachu-shop/" "repo-benchmark/" "lotus.ipr" "lotus-apps-mrc-product/" "lotus-apps-estate/" "lotus-apps-doutor-news/" "lotus-apps-cci-news/" "apps_start_sh/" "lotus.iws" "lotus-apps-common-news/" "lotus-sendmail/" "lotus-publisher/" "batch_remove_snap/" "lotus-apps-filemanager/" "lotus-apps-product/" "lotus-apps-channel/" "lotus-apps-jeol-term/" "lotus-apps-doutor-shop/" "lotus-bootloader/" "setting_lotus-connect/" "lotus-testing-report/" "lotus-apps-psfb-product/" ".git/" "lotus-apps-recipe/" "lotus-apps-doutor-product/" "lotus-apps-jeol-product/" "lotus-apps-news/" "lotus-mms/" "lotus-file-server/" "lotus-search-app/" "lotus-apps-demo-channel/" "lotus.iml" "lotus-apps-jeol-news/" "lotus-apps-demo-product/" "lotus-contract/" "lotus-async/" "lotus-search-client/" "lotus-common/" "lotus-apps-mrc-news/" "lotus-apps-shimachu-news/" "lotus-connect/" "lotus-sitemaps/" "lotus-cms/" "lotus-scm/" "lotus-sshd/" "lotus-testing/" "lotus-publish-server/" "lotus-apps-common/" "apps_autostarup/")
+
+ ("/home/lotus/" (20686 27222 912227 699000) ".profile~" "lotus-search-server/" ".gem/" ".jitsuconf" "scriptMonkey/" ".gate.xml" ".shotwell/" ".goutputstream-LKVZ9V" ".fontconfig/" ".jline-reply.history" ".goutputstream-2CQ39V" ".goutputstream-NP02FW" "音乐/" ".icons/" ".Xauthority" ".goutputstream-MF7PFW" "lotus-search-server.txt~" ".goutputstream-HXFVEW" "lotus-search-server.sh" ".gnome2_private/" "build.gradle" ".goutputstream-UIV4BW" ".tsclient/" ".subversion_IDEA/" ".jline-clojure.main.history" ".goutputstream-3V489V" ".kompozer.net/" "node_modules/" ".gitk" ".bashrc" ".viminfo" ".recently-used" ".goutputstream-PJ6UCW" ".IntelliJIdea10/" ".goutputstream-BNV3JW" ".mysql_history" ".notifier.conf" ".pulse-cookie" ".gconfd/" ".qws/" ".installjammerinfo/" ".ec2/" "デスクトップ/" "tttt.sh~" ".vagrant.d/" ".java_history" "app/" ".lein/" ".dbus/" "lotus-review/" ".scim/" "文档/" ".slime-history.eld" ".gradle/" ".bashrc.swp" ".dmrc" ".emacs.d/" ".forever/" ".gksu.lock" ".viminfy.tmp" ".thumbnails/" ".uim.d/" ".vim/" ".recentf" ".goutputstream-JZ4OFW" "公共的/" ".ssh/" ".gate/" "模板/" "下载/" ".rnd" "kill-rabbitmq.sh~" "node-login/" ".smex-items" ".lotus-search-server.sh.swp" ".TinyCA/" ".libreoffice/" ".dbshell" ".mission-control/" "deuce/" ".goutputstream-A8HNNW" ".goutputstream-53UMDW" ".pip/" "桌面/" ".javafx_eula_accepted" ".git-credentials" ".file_backups/" ".esd_auth" ".profile" ".anthy/" "realm.xml~" "图片/" "nvm/" ".pulse/" ".goutputstream-2GUENW" ".aptitude/" "rabbitmq-signing-key-public.asc" "Ubuntu One/" ".pgpass" ".goutputstream-JL32MW" "workspace/" "xtest.sh~" ".goutputstream-B7B7OW" "clientcert.p12" "vmware/" "视频/" ".local/" "lotus-publisher/" ".oh-my-zsh/" ".goutputstream-3SIGNW" ".pki/" ".gate.session" ".viminfz.tmp" ".emacs.d.pre-prelude.tar" ".cpan/" ".ICEauthority" ".viminfx.tmp" ".mozilla/" ".gnupg/" ".goutputstream-AHRQJW" ".cache/" ".git-credential-cache/" "ダウンロード/" ".mountmanager/" ".goutputstream-0Q79CW" ".VirtualBox/" ".config/" ".erlang.cookie" ".zcompdump.dongzhu.yin.local.15691" ".goutputstream-XD6MKW" ".jitsu/" ".jmyspell/" ".#fff" ".xsession-errors.old" ".bm-repository" "Working/" ".goutputstream-SFQ2LW" ".recentf~" "lotus-apps/" ".goutputstream-HK1NMW" ".viminfo.tmp" ".bashrc~" ".npm/" ".goutputstream-SZ23IW" ".gnome2/" "test.html" ".crazyfun/" ".visualvm/" ".lesshst" ".goutputstream-Q7MTAW" ".compiz-1/" "settings.xml~" ".subversion/" "lotus-search-server.txt" ".java/" ".sudo_as_admin_successful" ".goutputstream-ZP798V" ".m2/" ".compiz/" ".goutputstream-5W8QBW" ".goutputstream-P3Y14V" "producer.sh~" "snippet.sh~" ".nave/" ".bash_history" ".gitconfig" ".pam_environment" ".themes/" "Mailbox" "txxxx.sh~" ".pgadmin_histoqueries" ".kde/" ".goutputstream-VZ2FNW" ".jline-bsh.Interpreter.history" ".checkgmail/" ".xinput.d/" "crawlus/" ".gvfs/" ".node_libraries/" ".node-completion/" ".bluefish/" ".bash_profile~" ".xsession-errors" "Maildir/" "tmp/" ".live-packs/" ".zshrc" ".goutputstream-144ZJW" ".disruptive innovations sarl/" "examples.desktop" ".goutputstream-51R6JW" ".macromedia/" ".fltk/" ".apport-ignore.xml" "lotus-async/" "lotus-search-server.sh~" ".goutputstream-OXEOKW" ".jitsulog" ".vmware/" ".gnome/" ".goutputstream-7FBGEW" "pgadmin.log" ".cvspass" ".adobe/" ".goutputstream-B0NGGW" "html2jade/" ".gconf/" "intellij-es.sh~" "ssh-login.sh~" ".rpmdb/" ".emacs-live.el" ".goutputstream-UNE4BW" ".pdf" ".node-gyp/" "indexer.sh~" ".mongorc.js" ".npmrc" ".goutputstream-GB9OAW" ".zcompdump" "indexer.sh" "elasticsearch.json~" ".selected_editor" "lotus-connect/" ".bash_profile" ".rediscli_history" ".goutputstream-W6XM9V" ".gstreamer-0.10/" ".goutputstream-996IDW" ".hplip/" ".goutputstream-SGPPBW" ".pgadmin3" ".ido.last" ".Multivalent/" ".bash_logout" ".nbi/" ".screenlets/" ".goutputstream-A2JBEW" "xxxxx.sh~" "lotus-search-server-jar-with-dependencies.jar" ".goutputstream-ZSKTBW" ".gtk-bookmarks" ".goutputstream-Z0NDMW" "../" "./")
+
+ ("/home/lotus/Working/lotus/lotus-testing-report/app/server/views/" (20681 9060 235372 400000) "login.jade" "account.jade" "../" "./" "reset.jade" "layout.jade" "account-form.jade" "modals/" "404.jade" "print.jade" "index.jade" "signup.jade")
+
+ ("/home/lotus/Working/lotus/lotus-testing-report/app/server/" (20680 14895 543650 949000) "../" "./" "views/" "modules/" "vendor/" "router.js")
+
+ ("/home/lotus/Working/lotus/lotus-testing-report/app/" (20680 4178 579376 0) "../" "./" "server/" "public/" "config.js")
+
+ ("/home/lotus/Working/lotus/lotus-testing/src/main/clojure/testing/" (20681 9512 439383 979000) "../" "./" "core.clj" ".#core.clj" "email_parsing.clj")
+
+ ("/home/lotus/Working/lotus/lotus-testing/src/main/clojure/" (20680 4178 599376 542000) "../" "./" "search/" "testing/")
+
+ ("/home/lotus/Working/lotus/lotus-testing/src/main/" (20680 4134 171375 404000) "../" "./" "clojure/" "resources/")
+
+ ("/home/lotus/Working/lotus/lotus-testing/src/" (20680 4134 171375 404000) "test/" "../" "./" "main/")
+
+ ("/home/lotus/Working/lotus/lotus-testing/" (20680 15195 899658 640000) "config.ini" "README.md" "build.gradle" "../" "log.sh" "stop_connect_all.sh" "./" "lotus-publish-server-2.3-SNAPSHOT.war.2" "install/" "lotus-testing.iml" ".gradle/" "src/" "stop_connect.sh" "modules/" "target/" "make_contents.sh" "lotus-testing.sh" "settings.gradle" "lib/" "stop_jetty.sh" "logs/" "start_jetty.sh" "lotus-publish-server-2.3-SNAPSHOT.war.1" "reports/" "gradlew" "project.clj" "gradle/" "start_connect.sh")
+
+ ("/home/lotus/Working/" (20680 3958 211370 899000) "../" "./" "lotus/" "bak/" "crawlus/" "clj-webdriver/" "lotus (copy)/" "elasticsearch/" "lotus-testing/")
+
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/jp/chakra/lotus/cms/response/" (20635 3786 989730 294000) "svn.clj" "html.clj" "./" "validator.clj" "../" "aws_s3.clj" "sync_validator.clj" "cms_page.clj" "response_util.clj" "process.clj" "language.clj" "json.clj" "route.clj")
+
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/jp/chakra/lotus/cms/" (20632 63462 589641 951000) "mongo.clj" "./" "session.clj" "acl/" "../" "controller.clj" "database.clj" "scheme.clj" "response/" "auth/" "filter/")
+
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/jp/chakra/lotus/" (20632 63303 577637 880000) "./" "../" "util/" "cms/" "apps/" "system/")
+
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/jp/chakra/" (20632 63303 569637 879000) "./" "../" "lotus/")
+
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/jp/" (20632 63303 569637 879000) "./" "../" "chakra/")
+
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/clojure/" (20632 63303 569637 879000) "jp/" "./" "../")
+
+ ("/home/lotus/workspace/lotus/lotus-cms/src/main/" (20632 63303 589637 880000) "webapp/" "./" "../" "resources/" "clojure/")
+
+ ("/home/lotus/workspace/lotus/lotus-cms/src/" (20632 63303 709637 883000) "./" "../" "test/" "main/")
+
+ ("/home/lotus/workspace/lotus/lotus-cms/" (20635 3964 441734 837000) "./" "lotus-cms.iml" "../" "src/" "pom.xml" "target/")
+
+ ("/home/lotus/workspace/lotus/" (20635 10532 89903 1000) "lotus-apps-product/" "lotus-bootloader/" "lotus-apps-cci-news/" "lotus-publisher/" "lotus-apps-jeol-product/" "lotus-apps-demo-product/" "lotus-apps-estate/" "lotus-apps-psfb-product/" "./" "lotus-apps-psfb-recipe/" "lotus-apps-doutor-shop/" "download_sh/" "lotus-search/" "lotus-scm/" "lotus-sendmail/" "lotus-async/" "lotus-apps-shimachu-news/" "lotus-file-server/" "../" "lotus-apps-jeol-news/" "lotus-apps-doutor-news/" "apps_start_sh/" "lotus-apps-shimachu-shop/" "lotus-apps-mrc-product/" "pom.xml" "lotus-apps-recipe/" "setting_lotus-connect/" "lotus-apps-news/" "lotus-apps-common-news/" "repo-benchmark/" "lotus-connect/" "lotus-sshd/" "lotus.iws" "batch_remove_snap/" "lotus-mms/" "lotus-sitemaps/" "lotus-review/" "lotus-apps-jeol-term/" "lotus-apps-doutor-product/" "lotus-cms/" "lotus-apps-demo-channel/" ".git/" "lotus-common/" "lotus-security-acl/" "lotus-dav-server/" "pmip/" "lotus-apps-common/" "lotus.iml" "lotus.ipr" "lotus-apps-filemanager/" "apps_autostarup/" "lotus-contract/" "lotus-publish-server/" "lotus-apps-channel/" "lotus-apps-mrc-news/")
+
+ ("/home/lotus/workspace/" (20634 10571 68303 679000) ".Trash-1000/" "./" "../" "lotus/" "ghostdriver/" "bak-lotus/" "bak-lotus-20121107/" "clj-webdriver/" "lotus-testing-tool/")
+
+ ("/home/" (20612 43533 669423 254000) "../" "journal/" "./" "mongod.lock" "redis/" "lotus/" "www/" "fmaster/" "node/" "elasticsearch/")
+
+ ("/home/lotus/pj/24206067/lotus/" (20561 36431) "lotus-search-server/" "pmip/" "lotus-security-acl/" "../" "download_sh/" "./" "lotus-dav-server/" "lotus-review/" "pom.xml" "lotus-apps-shimachu-shop/" "repo-benchmark/" "lotus.ipr" "lotus-apps-mrc-product/" "lotus-apps-estate/" "lotus-apps-doutor-news/" "lotus-apps-cci-news/" "lotus.iws" "lotus-sendmail/" "lotus-publisher/" "lotus-apps-filemanager/" "lotus-apps-product/" "lotus-apps-channel/" "lotus-apps-doutor-shop/" "lotus-bootloader/" ".git/" "lotus-apps-recipe/" "lotus-apps-doutor-product/" "lotus-apps-news/" "lotus-mms/" "lotus-file-server/" "lotus-search-app/" "lotus-apps-demo-channel/" "lotus.iml" "lotus-apps-demo-product/" "lotus-contract/" "lotus-async/" "lotus-search-client/" "lotus-common/" "lotus-apps-mrc-news/" "lotus-apps-shimachu-news/" "lotus-connect/" "lotus-sitemaps/" "lotus-cms/" "lotus-scm/" "lotus-sshd/" "lotus-publish-server/" "lotus-apps-common/")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-app/app/server/views/" (20561 14696) "login.jade" "account.jade" "../" "./" "reset.jade" "layout.jade" "account-form.jade" ".#login.jade" "modals/" "404.jade" "print.jade" ".#signup.jade" "index.jade" "signup.jade")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-app/app/server/" (20561 16664) "../" "./" "views/" "modules/" "vendor/" "router.js")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-app/" (20561 16778) "README.md" "config/" "../" "node_modules/" "./" "app/" "package.json" "bin/" ".meteor/" "app.js")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/chakra/lotus/search/server/scanner/" (20541 50381) "svnscanner.clj" "../" "./" "dbscanner.clj")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/chakra/lotus/search/server/" (20552 31394) "scanner/" "../" "main.clj" "./" "utils/" "publisher.clj" "env/")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-app/app/server/vendor/facetview/" (20553 18284) "../" "./" "jquery.facetview.js" "jquery.facetview.prototype.js")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/chakra/lotus/search/" (20368 65249) "../" "./" "server/")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/chakra/lotus/" (20350 26558) "../" "./" "search/")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/chakra/" (20263 37501) "../" "./" "lotus/")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/jp/" (20263 37501) "../" "./" "chakra/")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/clojure/" (20376 46504) "../" "./" "jp/")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/main/" (20364 52371) "../" "./" "clojure/" "resources/")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/src/" (20550 54534) "../" "./" "main/")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-server/" (20550 61300) "../" "./" "pom.xml" "lotus-search-server.iml" "bin/" "src/" "README")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-app/app/server/vendor/" (20544 22729) "../" "./" "font-awesome/" "underscore/" "handlebars/" "bootstrap/" "jquery/" "facetview/" "templating/" "json2html/" "json2/" "d3/" "select2/")
+
+ ("/home/lotus/pj/24206067/lotus/lotus-search-app/app/" (20550 55273) "../" "./" "server/" "public/" "config.js")
+
+ ("/home/lotus/pj/24206067/" (20263 37335) "../" "./" "lotus/")
+
+ ("/home/lotus/pj/" (20541 54256) ".svn/" "../" "./" "stanbol/" "24206067/" "weka/" "elasticsearch/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

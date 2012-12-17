@@ -1,0 +1,40 @@
+!!! strict
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    link(rel='stylesheet', type='text/css', media='screen', charset='utf-8', href='/vendor/jquery/css/ui-lightness/jquery-ui-1.8.23.custom.css')
+    link(rel='stylesheet', type='text/css', media='screen', charset='utf-8', href='/vendor/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', media='screen', charset='utf-8', href='/css/style.css')
+    script(type='text/javascript', src='/vendor/jquery/js/jquery-1.8.0.min.js')
+    script(type='text/javascript', src='/vendor/jquery/js/jquery-ui-1.8.23.custom.min.js')
+    script(type='text/javascript', src='/vendor/jquery/js/jquery.form.js')
+    script(type='text/javascript', src='/vendor/bootstrap/js/bootstrap.min.js')
+
+    script(type='text/javascript', src='/vendor/knockout/knockout-2.1.0.js')
+    script(type='text/javascript', src='/vendor/knockout/ko.custom.js')
+
+  body!= body
+    input#hidden_sort_select(type='hidden', value='create_time')
+    input#hidden_order_select(type='hidden', value='desc')
+    .container
+      .navbar.navbar-fixed-top
+        .navbar-inner
+          .container
+            a.brand(href='#') Mail Form Test Report
+            ul.nav
+              li
+                a(href='#') Home
+              li
+                a(href='http://www.connecty.co.jp/') Connecty Inc.
+              li
+                a(href='http://www.connecty.co.jp/contact/inquiry.html') Contact
+            #account-settings
+            #logout
+    .container
+        .navbar.navbar-fixed-bottom
+          .navbar-inner
+            .container
+              footer
+                p(style='text-align: center;')
+                  | ©
+                  a(href='http://www.connecty.co.jp/') 株式会社コネクティ（ Connecty Inc. ）

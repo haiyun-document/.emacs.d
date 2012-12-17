@@ -1,0 +1,116 @@
+(ns jp.chakra.lotus.search.server.publisher
+  (:require
+    [clj-etl-utils.log :as log]
+    )
+  (:use
+    jp.chakra.lotus.search.client.core
+    jp.chakra.lotus.search.server.scanner.dbscanner
+    jp.chakra.lotus.search.server.scanner.svnscanner
+    jp.chakra.lotus.search.server.env.config
+    jp.chakra.lotus.search.server.utils.utils
+    jp.chakra.lotus.search.server.utils.cms
+    jp.chakra.lotus.store.mongo
+    jp.chakra.lotus.config.bootstrap
+    karras.sugar
+    clj-stacktrace.core
+    )
+  (:import
+    (org.bson.types ObjectId)
+    (java.util Date)
+    )
+  )
+
+
+(defn commit-history-mongo
+  [lastId rtype]
+  (let [lst (ref [])]
+    (with-mongo-env (str "index") rtype
+      (doseq [rec (get-documents
+                    (collectionname-to-classname (:collection ((keyword rtype) @config)))
+                    (if-not (empty? lastId)
+                      (where (gt :_id (to-oid lastId)))
+                      {})
+                    :sort [{:_id 1}])]
+        (dosync (alter lst conj rec))
+        )
+      )
+    @lst)
+  )
+
+
+
+(defn commit-history-postgre
+  [lastId]
+  (let [auxCnt (if-not (empty? lastId)
+                (:cnt (first (sql-query [(str "select count(cw.updated) as cnt from cms_workitem cw " (str " where cw.updated = '" (:updated lastId) "' and cw.created > '" (:created lastId) "' "))])))
+                0
+                )
+        norCnt (:cnt (first (sql-query [(str "select count(cw.updated) as cnt from cms_workitem cw " (if-not (empty? lastId) (str " where cw.updated > '" (:updated lastId) "' ") ""))])))
+        ]
+    (if (> auxCnt 0)
+      (map #(assoc % :commits ($decode "application/json; charset=UTF-8" (.getBytes (:commits %))))
+        (vec (remove nil? (concat (workitems lastId true) (workitems lastId false)))))
+      (if (> norCnt 0)
+        (map #(assoc % :commits ($decode "application/json; charset=UTF-8" (.getBytes (:commits %)))) (workitems lastId false))
+        )
+      )
+    )
+  )
+
+
+
+(defn test
+  []
+  (let []
+    (if-let
+        ()))empty? 
+
+  
+  
+  
+
+
+  (defn producer
+    [^String rtype]
+    (with-es-evn rtype
+      (let [lastId (atom {:id (get-in (client *es-server* :action _get :index "lotus-search-config" :type rtype :id "_last_id" :async false) [:body :_source ])
+                          :updates 0})]
+        (try
+          (doseq [doc (if (= "rdb" rtype)
+                        (commit-history-postgre (:id @lastId))
+                        (commit-history-mongo (:updated (:id @lastId)) rtype))]
+            (try
+              (if (= "rdb" rtype)
+                (reset! lastId {:id {:updated (:updated doc) :created (:created doc)} :updates (inc (:updates @lastId))})
+                (reset! lastId {:id (str (:_id doc)) :updates (inc (:updates @lastId))})
+                )
+              (if-let [commits (:commits doc)]
+                (doseq [commit commits]
+                  (doseq [key (remove empty? (:keys commit))]
+                    (when-let [docs (if (is-oid-str? key)
+                                      (blob (to-oid key) (str (:cms_site_id doc)) rtype doc)
+                                      (log-entries-by-revision key (str (:cms_site_id doc)) rtype doc)
+                                      )]
+                      (lotus-search-publisher docs rtype)
+                      )
+                    )
+                  )
+                (lotus-search-publisher (vector doc) rtype)
+                )
+              (finally
+               (client *es-server* :action _post :index "lotus-search-config" :type rtype :id "_last_id" :doc (:id @lastId) :async false)
+               )
+              )
+            )
+          (catch Exception ex
+            (lotus-search-publisher (vector {:_last_id (:id @lastId) :_contents {:exception (walk-document (parse-exception ex))}}) rtype)
+            )
+          (finally
+           (when-not (= 0 (:updates @lastId))
+             (client *es-server* :action _post :index "lotus-search-config" :type rtype :id "_last_id" :doc (:id @lastId) :async false)
+             )
+           )
+          )
+        )
+      )
+    ))
